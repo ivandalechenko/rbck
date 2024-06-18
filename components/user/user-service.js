@@ -46,17 +46,17 @@ class UserService {
     async refresh(refreshToken) {
         // console.log(refreshToken);
         if (!refreshToken) {
-            console.log('Я не получил токен');
+            // console.log('Я не получил токен');
             throw ApiError.UnauthorizedError();
         }
         const userData = tokenService.validateRefreshToken(refreshToken);
         const tokenFromDb = await tokenService.findToken(refreshToken);
         if (!userData) {
-            console.log('Я не нашёл юзера');
+            // console.log('Я не нашёл юзера');
             throw ApiError.UnauthorizedError();
         }
         if (!tokenFromDb) {
-            console.log('Я не нашёл токена в базе');
+            // console.log('Я не нашёл токена в базе');
             throw ApiError.UnauthorizedError();
         }
         // let _id;
@@ -94,7 +94,7 @@ class UserService {
             const resource = resources.find(obj => obj['level'] === user.cargo[i]);
             profit += resource.price;
         }
-        console.log(`Профит ${profit}`);
+        // console.log(`Профит ${profit}`);
         const newUser = await UserModel.findOneAndUpdate({ _id }, { cargo: [], cargoWeight: 0, balance: user.balance + profit, totalFarmed: user.totalFarmed + profit }, { new: true })
         return newUser
 

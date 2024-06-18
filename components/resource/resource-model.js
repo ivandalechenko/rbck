@@ -7,9 +7,11 @@ const ResourceSchema = new Schema({
     weight: Number,
     canMineLevel: [{
         canMineLevel: Number,
+        _id: Schema.Types.ObjectId,
         luckLevel: [{
             luckLevel: Number,
-            percent: Number
+            percent: Number,
+            _id: Schema.Types.ObjectId
         }]
     }]
 })

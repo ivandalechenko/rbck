@@ -95,6 +95,9 @@ class upgradeService {
                 if (upgrade.improve[i].name == 'resource') {
                     await userModel.findOneAndUpdate({ _id }, { $inc: { canMine: upgrade.improve[i].value } })
                 }
+                if (upgrade.improve[i].name == 'gamesPerDay') {
+                    await userModel.findOneAndUpdate({ _id }, { $inc: { gamesPerDay: upgrade.improve[i].value } })
+                }
                 if (upgrade.improve[i].name == 'luck') {
                     await userModel.findOneAndUpdate({ _id }, { $inc: { luck: upgrade.improve[i].value } })
                 }

@@ -9,6 +9,7 @@ const UpgradeSchema = new Schema({
     improve: [{
         name: String,
         value: Number,
+        _id: Schema.Types.ObjectId
     }],
     requirement: [String],
 });
