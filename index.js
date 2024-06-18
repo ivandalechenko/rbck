@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://c4q8292z-5173.euw.devtunnels.ms']
+    origin: [process.env.CLIENT_URL, 'http://localhost:5173', 'http://localhost:5174', 'https://c4q8292z-5173.euw.devtunnels.ms']
 }));
 
 
