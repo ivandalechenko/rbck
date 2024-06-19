@@ -23,10 +23,10 @@ class UserService {
     //     return { ...tokens, user: new ProfileDto(user) }
     // }
 
-    async login(tgId, username) {
+    async login(tgId, invitedBy, username) {
         let user = await UserModel.findOneAndUpdate({ tgId }, {}, { new: true })
         if (!user) {
-            user = await UserModel.create({ tgId, username })
+            user = await UserModel.create({ tgId, invitedBy, username })
         }
         // const isPassEquals = await bcrypt.compare(password, user.password);
         // if (!isPassEquals) {

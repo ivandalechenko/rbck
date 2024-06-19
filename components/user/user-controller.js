@@ -19,8 +19,8 @@ class UserController {
 
     async login(req, res, next) {
         try {
-            const { tgId, username } = req.body;
-            const userData = await userService.login(tgId, username);
+            const { tgId, username, r } = req.body;
+            const userData = await userService.login(tgId, r, username);
             res.cookie('refreshToken', userData.refreshToken, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'none', secure: true })
             // userData.refreshToken = 'ok'
             // console.log(userData);
@@ -40,6 +40,20 @@ class UserController {
             next(e);
         }
     }
+    async myReferalsCount(req, res, next) {
+        try {
+            const token = req.headers.authorization;
+            const accessToken = token.split(' ')[1];
+            const decodedToken = tokenService.validateAccessToken(accessToken);
+
+            const referals = await userModel.find({ invitedBy: decodedToken.user.tgId })
+            return res.json(referals.length);
+        } catch (e) {
+            next(e);
+        }
+    }
+
+
     async comleteTraining(req, res, next) {
         try {
             const token = req.headers.authorization;

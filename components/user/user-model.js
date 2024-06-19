@@ -4,6 +4,7 @@ const ResourceModel = require('../resource/resource-model');
 const UserSchema = new Schema({
     tgId: String,
     username: String,
+    invitedBy: String,
     balance: { type: Number, default: 99999 },
     totalFarmed: { type: Number, default: 0 },
     cargo: [Number],

@@ -8,6 +8,7 @@ router.post('/login', userController.login);
 router.post('/logout', userController.logout);
 router.get('/refresh', userController.refresh);
 router.get('/me', userController.me);
+router.get('/myReferalsCount', userController.myReferalsCount);
 router.post('/comleteTraining', userController.comleteTraining);
 
 
