@@ -2,6 +2,7 @@ const userService = require('./user-service');
 const { validationResult } = require('express-validator');
 const ApiError = require('../../exceptions/api-error');
 const tokenService = require('../token/token-service');
+const userModel = require('./user-model');
 
 class UserController {
     // async registration(req, res, next) {
@@ -39,6 +40,19 @@ class UserController {
             next(e);
         }
     }
+    async comleteTraining(req, res, next) {
+        try {
+            const token = req.headers.authorization;
+            const accessToken = token.split(' ')[1];
+            const decodedToken = tokenService.validateAccessToken(accessToken);
+            await userModel.findOneAndUpdate({ _id: decodedToken.user._id }, { completedTraining: true });
+            return res.json('ok');
+        } catch (e) {
+            next(e);
+        }
+    }
+
+
 
     async logout(req, res, next) {
         try {

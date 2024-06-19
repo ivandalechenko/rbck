@@ -8,6 +8,8 @@ router.post('/login', userController.login);
 router.post('/logout', userController.logout);
 router.get('/refresh', userController.refresh);
 router.get('/me', userController.me);
+router.post('/comleteTraining', userController.comleteTraining);
+
 
 router.post('/tap', userController.tap);
 router.post('/sell', userController.sell);
