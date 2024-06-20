@@ -11,6 +11,10 @@ router.get('/me', userController.me);
 router.get('/myReferalsCount', userController.myReferalsCount);
 router.post('/comleteTraining', userController.comleteTraining);
 
+router.post('/fuelBoost', userController.fuelBoost);
+router.post('/rage', userController.rage);
+// router.post('/comleteTraining', userController.comleteTraining);
+
 
 router.post('/tap', userController.tap);
 router.post('/sell', userController.sell);

@@ -4,6 +4,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose');
 const userRouter = require('./components/user/user-router')
+const questRouter = require('./components/quest/quest-router')
 const testRouter = require('./components/test/test-router')
 const upgradeRouter = require('./components/upgrade/upgrade-router')
 const resourceRouter = require('./components/resource/resource-router')
@@ -38,6 +39,7 @@ app.use('/user', userRouter);
 app.use('/api', testRouter);
 app.use('/upgrade', upgradeRouter);
 app.use('/resource', resourceRouter);
+app.use('/quest', questRouter);
 app.use(errorMiddleware);
 
 

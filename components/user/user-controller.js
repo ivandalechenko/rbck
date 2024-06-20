@@ -104,6 +104,32 @@ class UserController {
             next(e);
         }
     }
+    async fuelBoost(req, res, next) {
+        try {
+            const token = req.headers.authorization;
+            const accessToken = token.split(' ')[1];
+            const decodedToken = tokenService.validateAccessToken(accessToken);
+            const user = await userService.fuelBoost(decodedToken.user);
+            return res.json(user);
+        } catch (e) {
+            next(e);
+        }
+    }
+
+    async rage(req, res, next) {
+        try {
+            const token = req.headers.authorization;
+            const accessToken = token.split(' ')[1];
+            const decodedToken = tokenService.validateAccessToken(accessToken);
+            const user = await userService.rage(decodedToken.user);
+            return res.json(user);
+        } catch (e) {
+            next(e);
+        }
+    }
+
+
+
 
     async sell(req, res, next) {
         try {

@@ -17,6 +17,8 @@ const UserSchema = new Schema({
     minePower: { type: Number, default: 1 },
     luck: { type: Number, default: 0 },
     canMine: { type: Number, default: 0 },
+
+
     autoFarmed: Number,
     autoTime: { type: Number, default: 0 },
     autoPercent: { type: Number, default: 0 },
@@ -25,6 +27,9 @@ const UserSchema = new Schema({
         type: Date,
         default: Date.now,
     },
+    lastFuelBoost: Date,
+    lastRage: Date,
+    rage: Boolean,
 })
 
 // Middleware для обновления lastActivity перед findOneAndUpdate
@@ -35,12 +40,28 @@ UserSchema.pre('findOneAndUpdate', async function (next) {
 
     if (docToUpdate) {
         const now = Date.now();
+        let newFuel = docToUpdate.fuel;
+
+        if (docToUpdate.rage) {
+            const lastRage = docToUpdate.lastRage.getTime();
+            if (now - lastRage > 30000) {
+                this.set({
+                    maxFuel: docToUpdate.maxFuel / 3,
+                    minePower: docToUpdate.minePower / 10,
+                    rage: false
+                });
+                update.$set.fuel = newFuel / 3
+            }
+        }
+
+
+
+
         const lastActivity = docToUpdate.lastActivity.getTime();
         let timeElapsed = now - lastActivity;
 
         let increaseFuelBy = timeElapsed * (docToUpdate.maxFuel * docToUpdate.gamesPerDay) / 86400000;
 
-        let newFuel = docToUpdate.fuel;
         if (update.$set && update.$set.fuel !== undefined) {
             newFuel = update.$set.fuel;
         } else if (update.fuel !== undefined) {
@@ -116,6 +137,8 @@ UserSchema.pre('findOneAndUpdate', async function (next) {
             });
         }
     }
+
+
 
     next();
 });
