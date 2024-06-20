@@ -115,18 +115,16 @@ class UserService {
         return newUser
     }
 
-    async rage({ _id }) {
+    async rage(_id) {
         const user = await UserModel.findOne({ _id })
-
+        console.log(user);
         const now = Date.now();
         const lastRageTime = new Date(user.lastRage)
         const lastRage = lastRageTime.getTime();
 
-        if (user.lastRage) {
-            const timeElapsed = now - lastRage;
-            if (timeElapsed < 12 * 60 * 60 * 1000) {
-                throw ApiError.BadRequest('Пояс астероидов ещё не перезарядился');
-            }
+        const timeElapsed = now - lastRage;
+        if (timeElapsed < 12 * 60 * 60 * 1000) {
+            throw ApiError.BadRequest('Пояс астероидов ещё не перезарядился');
         }
         await UserModel.updateOne({ _id: user._id }, { rage: true, fuel: user.fuel * 3, maxFuel: user.maxFuel * 3, minePower: user.minePower * 10, lastRage: now }, { new: true })
         const newUser = await UserModel.findOneAndUpdate({ _id: user._id }, {}, { new: true })

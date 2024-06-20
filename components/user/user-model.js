@@ -1,5 +1,15 @@
 const { Schema, model } = require('mongoose');
 const ResourceModel = require('../resource/resource-model');
+const defaultTimeMinus12Hours = () => {
+    const date = new Date();
+    date.setHours(date.getHours() - 12);
+    return date;
+};
+const defaultTimeMinus24Hours = () => {
+    const date = new Date();
+    date.setHours(date.getHours() - 24);
+    return date;
+};
 
 const UserSchema = new Schema({
     tgId: String,
@@ -28,8 +38,14 @@ const UserSchema = new Schema({
         type: Date,
         default: Date.now,
     },
-    lastFuelBoost: Date,
-    lastRage: Date,
+    lastFuelBoost: {
+        type: Date,
+        default: defaultTimeMinus24Hours
+    },
+    lastRage: {
+        type: Date,
+        default: defaultTimeMinus12Hours
+    },
     rage: Boolean,
 })
 

@@ -121,6 +121,9 @@ class UserController {
             const token = req.headers.authorization;
             const accessToken = token.split(' ')[1];
             const decodedToken = tokenService.validateAccessToken(accessToken);
+            console.log(decodedToken);
+            console.log(decodedToken.user);
+            console.log(decodedToken.user._id);
             const user = await userService.rage(decodedToken.user._id);
             return res.json(user);
         } catch (e) {
