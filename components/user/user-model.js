@@ -20,7 +20,7 @@ const UserSchema = new Schema({
     cargo: [Number],
     upgrades: {
         type: [String],
-        default: ['cargo 1', 'cargo 2', 'cargo 3', 'mine 1', 'mine 2', 'mine 3']
+        default: ['cargo 1', 'cargo 2', 'cargo 3', 'mine 1', 'mine 2', 'mine 3', "rocket 2"]
     },
     completedQuests: [String],
     // cargoCapacity: { type: Number, default: 200 },
