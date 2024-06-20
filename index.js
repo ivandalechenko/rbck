@@ -11,6 +11,7 @@ const resourceRouter = require('./components/resource/resource-router')
 
 const upgradeSchema = require('./components/upgrade/upgrade-model')
 const resourceSchema = require('./components/resource/resource-model')
+const questSchema = require('./components/quest/quest-model')
 
 const errorMiddleware = require('./middlewares/error-middleware');
 const fs = require('fs');
@@ -50,6 +51,8 @@ const start = async () => {
         // инициализация базовой базы
         const upgradesCount = await upgradeSchema.countDocuments();
         const resourcesCount = await resourceSchema.countDocuments();
+        const questCount = await questSchema.countDocuments();
+
         if (upgradesCount === 0) {
             const dataPath = path.join(__dirname, 'upgrades.json');
             const fileContent = fs.readFileSync(dataPath, 'utf8');
@@ -68,21 +71,22 @@ const start = async () => {
             await upgradeSchema.insertMany(data);
             console.log('Upgrades init');
         }
+        if (questCount === 0) {
+            const dataPath = path.join(__dirname, 'quests.json');
+            const fileContent = fs.readFileSync(dataPath, 'utf8');
+            let data = JSON.parse(fileContent);
+            // Преобразование ObjectId в правильный формат
+            data = data.map(doc => {
+                doc._id = new mongoose.Types.ObjectId(doc._id.$oid);
+                return doc;
+            });
+            await questSchema.insertMany(data);
+            console.log('Quests init');
+        }
         if (resourcesCount === 0) {
             const dataPath = path.join(__dirname, 'resources.json');
             const fileContent = fs.readFileSync(dataPath, 'utf8');
             let data = JSON.parse(fileContent);
-
-            // data = data.map(doc => {
-            //     doc._id = new mongoose.Types.ObjectId(doc._id.$oid);
-            //     if (doc.improve) {
-            //         doc.improve = doc.improve.map(improve => ({
-            //             ...improve,
-            //             _id: new mongoose.Types.ObjectId(improve._id.$oid)
-            //         }));
-            //     }
-            //     return doc;
-            // });
 
             data = data.map(resource => {
                 resource._id = new mongoose.Types.ObjectId(resource._id.$oid);

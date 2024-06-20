@@ -9,6 +9,7 @@ const UserSchema = new Schema({
     totalFarmed: { type: Number, default: 0 },
     cargo: [Number],
     upgrades: [String],
+    completedQuests: [String],
     cargoCapacity: { type: Number, default: 200 },
     cargoWeight: { type: Number, default: 0 },
     gamesPerDay: { type: Number, default: 12 },
