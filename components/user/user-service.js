@@ -105,12 +105,12 @@ class UserService {
         const lastFuelBoostTime = new Date(user.lastFuelBoost)
         const lastFuelBoost = lastFuelBoostTime.getTime();
 
-        if (user.lastFuelBoost) {
-            const timeElapsed = now - lastFuelBoost;
-            if (timeElapsed < 24 * 60 * 60 * 1000) {
-                throw ApiError.BadRequest('Топливный буст ещё не перезарядился');
-            }
-        }
+        // if (user.lastFuelBoost) {
+        //     const timeElapsed = now - lastFuelBoost;
+        //     if (timeElapsed < 24 * 60 * 60 * 1000) {
+        //         throw ApiError.BadRequest('Топливный буст ещё не перезарядился');
+        //     }
+        // }
         const newUser = await UserModel.findOneAndUpdate({ _id: user._id }, { fuel: user.maxFuel, lastFuelBoost: now }, { new: true })
         return newUser
     }
@@ -122,10 +122,10 @@ class UserService {
         const lastRageTime = new Date(user.lastRage)
         const lastRage = lastRageTime.getTime();
 
-        const timeElapsed = now - lastRage;
-        if (timeElapsed < 12 * 60 * 60 * 1000) {
-            throw ApiError.BadRequest('Пояс астероидов ещё не перезарядился');
-        }
+        // const timeElapsed = now - lastRage;
+        // if (timeElapsed < 12 * 60 * 60 * 1000) {
+        //     throw ApiError.BadRequest('Пояс астероидов ещё не перезарядился');
+        // }
         await UserModel.updateOne({ _id: user._id }, { rage: true, fuel: user.fuel * 3, maxFuel: user.maxFuel * 3, minePower: user.minePower * 10, lastRage: now }, { new: true })
         const newUser = await UserModel.findOneAndUpdate({ _id: user._id }, {}, { new: true })
         return newUser
