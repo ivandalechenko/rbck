@@ -23,15 +23,17 @@ class UserService {
     //     return { ...tokens, user: new ProfileDto(user) }
     // }
 
-    async login(tgId, invitedBy, username) {
+    async login(tgId, username, invitedBy, isPremium) {
         let user = await UserModel.findOneAndUpdate({ tgId }, {}, { new: true })
         if (!user) {
             user = await UserModel.create({ tgId, invitedBy, username })
+            if (isPremium) {
+                await UserModel.updateOne({ tgId: invitedBy }, { $inc: { balance: 25000 } })
+            } else {
+                await UserModel.updateOne({ tgId: invitedBy }, { $inc: { balance: 5000 } })
+            }
         }
-        // const isPassEquals = await bcrypt.compare(password, user.password);
-        // if (!isPassEquals) {
-        //     throw ApiError.BadRequest('Неверный пароль');
-        // }
+
         const tokens = tokenService.generateTokens({ user });
         await tokenService.saveToken(user._id, tokens.refreshToken);
 

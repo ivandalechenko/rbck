@@ -15,12 +15,12 @@ const UserSchema = new Schema({
     tgId: String,
     username: String,
     invitedBy: String,
-    balance: { type: Number, default: 9999999 },
+    balance: { type: Number, default: 999999999 },
     totalFarmed: { type: Number, default: 0 },
     cargo: [Number],
     upgrades: {
         type: [String],
-        default: ['cargo 1', 'cargo 2', 'cargo 3', 'mine 1', 'mine 2', 'mine 3', "rocket 2"]
+        default: ['cargo 1', 'cargo 2', 'cargo 3', 'cargo 4', 'cargo 5', 'cargo 6', 'mine 1', 'mine 2', 'mine 3', 'mine 4', 'mine 5', 'mine 6', "rocket 2", "rocket 3"]
     },
     completedQuests: [String],
     // cargoCapacity: { type: Number, default: 200 },
@@ -35,7 +35,7 @@ const UserSchema = new Schema({
     minePower: { type: Number, default: 6 },
     luck: { type: Number, default: 0 },
     // canMine: { type: Number, default: 0 },
-    canMine: { type: Number, default: 1 },
+    canMine: { type: Number, default: 2 },
 
 
     autoFarmed: Number,

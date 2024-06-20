@@ -1,901 +1,1583 @@
-[
-  {
-    "_id": {
-      "$oid": "6670003ecfbd74a148572d47"
-    },
-    "slug": "cargo 1",
-    "name": "Грузоподъемность 1",
-    "level": 1,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "667196b9fa72a4943ef3570f"
-        }
-      }
-    ],
-    "requirement": [],
-    "__v": 0,
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "price": 5000
+[{
+  "_id": {
+    "$oid": "6670003ecfbd74a148572d47"
   },
-  {
-    "_id": {
-      "$oid": "6670006b7fa535134843e049"
-    },
-    "slug": "luck 1",
-    "name": "Удача 1",
-    "description": "Увеличивает шанс выпадения более редких ресурсов",
-    "level": 1,
-    "improve": [
-      {
-        "name": "luck",
-        "value": 1,
-        "_id": {
-          "$oid": "66719892fa72a4943ef35751"
-        }
+  "slug": "cargo 1",
+  "name": "Грузоподъемность 1",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 1,
+  "price": 5000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "667196b9fa72a4943ef3570f"
       }
-    ],
-    "requirement": [],
-    "__v": 0,
-    "price": 5000
+    }
+  ],
+  "requirement": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6670006b7fa535134843e049"
   },
-  {
-    "_id": {
-      "$oid": "6670015d7fa535134843e19d"
-    },
-    "slug": "mine 1",
-    "name": "Добыча 1",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 1,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "66719111fa72a4943ef345bd"
-        }
+  "slug": "luck 1",
+  "name": "Удача 1",
+  "description": "Увеличивает шанс выпадения более редких ресурсов",
+  "level": 1,
+  "price": 5000,
+  "improve": [
+    {
+      "name": "luck",
+      "value": 1,
+      "_id": {
+        "$oid": "66719892fa72a4943ef35751"
       }
-    ],
-    "requirement": [],
-    "__v": 0,
-    "price": 5000
+    }
+  ],
+  "requirement": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6670015d7fa535134843e19d"
   },
-  {
-    "_id": {
-      "$oid": "667001f87fa535134843e2ff"
-    },
-    "slug": "rocket 2",
-    "name": "Ракета 2",
-    "description": "Открывает новый возможность добывать новый ресурс",
-    "level": 2,
-    "improve": [
-      {
-        "name": "resource",
-        "value": 1,
-        "_id": {
-          "$oid": "66719a63509a5d76809651f7"
-        }
+  "slug": "mine 1",
+  "name": "Добыча 1",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 1,
+  "price": 5000,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667001f87fa535134843e2ff"
+  },
+  "slug": "rocket 2",
+  "name": "Ракета 2",
+  "description": "Открывает новый возможность добывать новый ресурс",
+  "level": 2,
+  "price": 14000,
+  "improve": [
+    {
+      "name": "resource",
+      "value": 1,
+      "_id": {
+        "$oid": "66719a63509a5d76809651f7"
       }
-    ],
-    "requirement": [
-      "mine 3",
-      "cargo 3"
-    ],
-    "__v": 0,
-    "price": 14000
+    }
+  ],
+  "requirement": [
+    "mine 3",
+    "cargo 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66702ca1d0bf320f11702a9f"
   },
-  {
-    "_id": {
-      "$oid": "66702ca1d0bf320f11702a9f"
-    },
-    "slug": "auto 1",
-    "name": "Автосбор 1",
-    "description": "Автоматически собирает 50% возможных ресурсов в течении 6 часов вашего отсутствия",
-    "level": 1,
-    "improve": [
-      {
-        "name": "autoTime",
-        "value": 6,
-        "_id": {
-          "$oid": "66718fc2fa72a4943ef344c9"
-        }
-      },
-      {
-        "name": "autoPercent",
-        "value": 50,
-        "_id": {
-          "$oid": "66718fc2fa72a4943ef344ca"
-        }
+  "slug": "auto 1",
+  "name": "Автосбор 1",
+  "description": "Автоматически собирает 50% возможных ресурсов в течении 6 часов вашего отсутствия",
+  "level": 1,
+  "price": 50000,
+  "improve": [
+    {
+      "name": "autoTime",
+      "value": 6,
+      "_id": {
+        "$oid": "66718fc2fa72a4943ef344c9"
       }
-    ],
-    "requirement": [
-      "rocket 3"
-    ],
-    "__v": 0,
-    "price": 50000
-  },
-  {
-    "_id": {
-      "$oid": "66719146fa72a4943ef345c1"
     },
-    "slug": "mine 2",
-    "name": "Добыча 2",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 2,
-    "price": 6500,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "66719146fa72a4943ef345c2"
-        }
+    {
+      "name": "autoPercent",
+      "value": 50,
+      "_id": {
+        "$oid": "66718fc2fa72a4943ef344ca"
       }
-    ],
-    "requirement": [
-      "mine 1"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719146fa72a4943ef345c1"
   },
-  {
-    "_id": {
-      "$oid": "66719157fa72a4943ef345c5"
-    },
-    "slug": "mine 3",
-    "name": "Добыча 3",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 3,
-    "price": 8450,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "66719157fa72a4943ef345c6"
-        }
+  "slug": "mine 2",
+  "name": "Добыча 2",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 2,
+  "price": 6500,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 1"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719157fa72a4943ef345c5"
+  },
+  "slug": "mine 3",
+  "name": "Добыча 3",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 3,
+  "price": 8450,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 2"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719197fa72a4943ef345c9"
+  },
+  "slug": "mine 4",
+  "name": "Добыча 4",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 4,
+  "price": 11000,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 2"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667191b3fa72a4943ef345d2"
+  },
+  "slug": "mine 5",
+  "name": "Добыча 5",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 5,
+  "price": 14300,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 4"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667191cafa72a4943ef345d6"
+  },
+  "slug": "mine 6",
+  "name": "Добыча 6",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 6,
+  "price": 18600,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 5"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667191e8fa72a4943ef345da"
+  },
+  "slug": "mine 7",
+  "name": "Добыча 7",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 7,
+  "price": 24150,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719208fa72a4943ef345de"
+  },
+  "slug": "mine 8",
+  "name": "Добыча 8",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 8,
+  "price": 31400,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 7"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719262fa72a4943ef34656"
+  },
+  "slug": "mine 9",
+  "name": "Добыча 9",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 9,
+  "price": 40800,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 8"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671927dfa72a4943ef346ef"
+  },
+  "slug": "mine 10",
+  "name": "Добыча 10",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 10,
+  "price": 53050,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 4"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671929cfa72a4943ef3473d"
+  },
+  "slug": "mine 11",
+  "name": "Добыча 11",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 11,
+  "price": 68950,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 10"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667192d2fa72a4943ef34769"
+  },
+  "slug": "mine 12",
+  "name": "Добыча 12",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 12,
+  "price": 89650,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 11"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667196d9fa72a4943ef3571a"
+  },
+  "slug": "cargo 2",
+  "name": "Грузоподъемность 2",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 2,
+  "price": 10000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "667196d9fa72a4943ef3571b"
       }
-    ],
-    "requirement": [
-      "mine 2"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 1"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667196f9fa72a4943ef3571e"
   },
-  {
-    "_id": {
-      "$oid": "66719197fa72a4943ef345c9"
-    },
-    "slug": "mine 4",
-    "name": "Добыча 4",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 4,
-    "price": 11000,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "6671919bfa72a4943ef345ce"
-        }
+  "slug": "cargo 3",
+  "name": "Грузоподъемность 3",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 3,
+  "price": 15000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "667196f9fa72a4943ef3571f"
       }
-    ],
-    "requirement": [
-      "rocket 2"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 2"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719708fa72a4943ef35722"
   },
-  {
-    "_id": {
-      "$oid": "667191b3fa72a4943ef345d2"
-    },
-    "slug": "mine 5",
-    "name": "Добыча 5",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 5,
-    "price": 14300,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "667191b3fa72a4943ef345d3"
-        }
+  "slug": "cargo 4",
+  "name": "Грузоподъемность 4",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 4,
+  "price": 20000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719708fa72a4943ef35723"
       }
-    ],
-    "requirement": [
-      "mine 4"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 2"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719713fa72a4943ef35726"
   },
-  {
-    "_id": {
-      "$oid": "667191cafa72a4943ef345d6"
-    },
-    "slug": "mine 6",
-    "name": "Добыча 6",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 6,
-    "price": 18600,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "667191cafa72a4943ef345d7"
-        }
+  "slug": "cargo 5",
+  "name": "Грузоподъемность 5",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 5,
+  "price": 25000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719713fa72a4943ef35727"
       }
-    ],
-    "requirement": [
-      "mine 5"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 4"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671971dfa72a4943ef3572a"
   },
-  {
-    "_id": {
-      "$oid": "667191e8fa72a4943ef345da"
-    },
-    "slug": "mine 7",
-    "name": "Добыча 7",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 7,
-    "price": 24200,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "667191e8fa72a4943ef345db"
-        }
+  "slug": "cargo 6",
+  "name": "Грузоподъемность 6",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 6,
+  "price": 30000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "6671971dfa72a4943ef3572b"
       }
-    ],
-    "requirement": [
-      "rocket 3"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 5"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719738fa72a4943ef3572e"
   },
-  {
-    "_id": {
-      "$oid": "66719208fa72a4943ef345de"
-    },
-    "slug": "mine 8",
-    "name": "Добыча 8",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 8,
-    "price": 31500,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "66719208fa72a4943ef345df"
-        }
+  "slug": "cargo 7",
+  "name": "Грузоподъемность 7",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 7,
+  "price": 35000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719738fa72a4943ef3572f"
       }
-    ],
-    "requirement": [
-      "mine 7"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719742fa72a4943ef35732"
   },
-  {
-    "_id": {
-      "$oid": "66719262fa72a4943ef34656"
-    },
-    "slug": "mine 9",
-    "name": "Добыча 9",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 9,
-    "price": 40950,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "66719262fa72a4943ef34657"
-        }
+  "slug": "cargo 8",
+  "name": "Грузоподъемность 8",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 8,
+  "price": 40000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719742fa72a4943ef35733"
       }
-    ],
-    "requirement": [
-      "mine 8"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 7"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671974ffa72a4943ef35736"
   },
-  {
-    "_id": {
-      "$oid": "6671927dfa72a4943ef346ef"
-    },
-    "slug": "mine 10",
-    "name": "Добыча 10",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 10,
-    "price": 53250,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "6671927dfa72a4943ef346f0"
-        }
+  "slug": "cargo 9",
+  "name": "Грузоподъемность 9",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 9,
+  "price": 45000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "6671978ffa72a4943ef35744"
       }
-    ],
-    "requirement": [
-      "rocket 4"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 8"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719767fa72a4943ef3573a"
   },
-  {
-    "_id": {
-      "$oid": "6671929cfa72a4943ef3473d"
-    },
-    "slug": "mine 11",
-    "name": "Добыча 11",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 11,
-    "price": 69250,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "667192b3fa72a4943ef34759"
-        }
+  "slug": "cargo 10",
+  "name": "Грузоподъемность 10",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 10,
+  "price": 50000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719779fa72a4943ef3573f"
       }
-    ],
-    "requirement": [
-      "mine 10"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 4"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719799fa72a4943ef35748"
   },
-  {
-    "_id": {
-      "$oid": "667192d2fa72a4943ef34769"
-    },
-    "slug": "mine 12",
-    "name": "Добыча 12",
-    "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
-    "level": 12,
-    "price": 90000,
-    "improve": [
-      {
-        "name": "mine",
-        "value": 1,
-        "_id": {
-          "$oid": "667192d2fa72a4943ef3476a"
-        }
+  "slug": "cargo 11",
+  "name": "Грузоподъемность 11",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 11,
+  "price": 55000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "66719799fa72a4943ef35749"
       }
-    ],
-    "requirement": [
-      "mine 11"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 10"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667197a3fa72a4943ef3574c"
   },
-  {
-    "_id": {
-      "$oid": "667196d9fa72a4943ef3571a"
-    },
-    "slug": "cargo 2",
-    "name": "Грузоподъемность 2",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 2,
-    "price": 10000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "667196d9fa72a4943ef3571b"
-        }
+  "slug": "cargo 12",
+  "name": "Грузоподъемность 12",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 12,
+  "price": 60000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200,
+      "_id": {
+        "$oid": "667197a3fa72a4943ef3574d"
       }
-    ],
-    "requirement": [
-      "cargo 1"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "cargo 11"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667198d5fa72a4943ef35755"
   },
-  {
-    "_id": {
-      "$oid": "667196f9fa72a4943ef3571e"
-    },
-    "slug": "cargo 3",
-    "name": "Грузоподъемность 3",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 3,
-    "price": 15000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "667196f9fa72a4943ef3571f"
-        }
+  "slug": "luck 2",
+  "name": "Удача 2",
+  "description": "Увеличивает шанс выпадения более редких ресурсов",
+  "level": 2,
+  "price": 50000,
+  "improve": [
+    {
+      "name": "luck",
+      "value": 1,
+      "_id": {
+        "$oid": "667198d5fa72a4943ef35756"
       }
-    ],
-    "requirement": [
-      "cargo 2"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667198fffa72a4943ef35759"
   },
-  {
-    "_id": {
-      "$oid": "66719708fa72a4943ef35722"
-    },
-    "slug": "cargo 4",
-    "name": "Грузоподъемность 4",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 4,
-    "price": 20000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719708fa72a4943ef35723"
-        }
+  "slug": "luck 3",
+  "name": "Удача 3",
+  "description": "Увеличивает шанс выпадения более редких ресурсов",
+  "level": 3,
+  "price": 200000,
+  "improve": [
+    {
+      "name": "luck",
+      "value": 1,
+      "_id": {
+        "$oid": "667198fffa72a4943ef3575a"
       }
-    ],
-    "requirement": [
-      "rocket 2"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 5"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719914fa72a4943ef3575d"
   },
-  {
-    "_id": {
-      "$oid": "66719713fa72a4943ef35726"
-    },
-    "slug": "cargo 5",
-    "name": "Грузоподъемность 5",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 5,
-    "price": 25000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719713fa72a4943ef35727"
-        }
+  "slug": "luck 4",
+  "name": "Удача 4",
+  "description": "Увеличивает шанс выпадения более редких ресурсов",
+  "level": 4,
+  "price": 1000000,
+  "improve": [
+    {
+      "name": "luck",
+      "value": 1,
+      "_id": {
+        "$oid": "66719914fa72a4943ef3575e"
       }
-    ],
-    "requirement": [
-      "cargo 4"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 7"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671992efa72a4943ef35761"
   },
-  {
-    "_id": {
-      "$oid": "6671971dfa72a4943ef3572a"
-    },
-    "slug": "cargo 6",
-    "name": "Грузоподъемность 6",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 6,
-    "price": 30000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "6671971dfa72a4943ef3572b"
-        }
+  "slug": "luck 5",
+  "name": "Удача 5",
+  "description": "Увеличивает шанс выпадения более редких ресурсов",
+  "level": 5,
+  "price": 5000000,
+  "improve": [
+    {
+      "name": "luck",
+      "value": 1,
+      "_id": {
+        "$oid": "6671992efa72a4943ef35762"
       }
-    ],
-    "requirement": [
-      "cargo 5"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "rocket 9"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719a7a509a5d76809651fb"
   },
-  {
-    "_id": {
-      "$oid": "66719738fa72a4943ef3572e"
-    },
-    "slug": "cargo 7",
-    "name": "Грузоподъемность 7",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 7,
-    "price": 35000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719738fa72a4943ef3572f"
-        }
+  "slug": "rocket 3",
+  "name": "Ракета 3",
+  "description": "Открывает новый возможность добывать новый ресурс",
+  "level": 3,
+  "price": 112320,
+  "improve": [
+    {
+      "name": "resource",
+      "value": 1,
+      "_id": {
+        "$oid": "66719a7a509a5d76809651fc"
       }
-    ],
-    "requirement": [
-      "rocket 3"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 6",
+    "cargo 6"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719aae509a5d76809651ff"
   },
-  {
-    "_id": {
-      "$oid": "66719742fa72a4943ef35732"
-    },
-    "slug": "cargo 8",
-    "name": "Грузоподъемность 8",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 8,
-    "price": 40000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719742fa72a4943ef35733"
-        }
+  "slug": "rocket 4",
+  "name": "Ракета 4",
+  "description": "Открывает доступ к новым улучшениям",
+  "level": 4,
+  "price": 362880,
+  "improve": [],
+  "requirement": [
+    "mine 9",
+    "cargo 9"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719ad2509a5d7680965202"
+  },
+  "slug": "rocket 5",
+  "name": "Ракета 5",
+  "description": "Открывает новый возможность добывать новый ресурс",
+  "level": 5,
+  "price": 725760,
+  "improve": [
+    {
+      "name": "resource",
+      "value": 1,
+      "_id": {
+        "$oid": "66719ad2509a5d7680965203"
       }
-    ],
-    "requirement": [
-      "cargo 7"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 12",
+    "cargo 12"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719b43509a5d7680965206"
   },
-  {
-    "_id": {
-      "$oid": "6671974ffa72a4943ef35736"
-    },
-    "slug": "cargo 9",
-    "name": "Грузоподъемность 9",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 9,
-    "price": 45000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "6671978ffa72a4943ef35744"
-        }
+  "slug": "rocket 6",
+  "name": "Ракета 6",
+  "description": "Открывает доступ к новым улучшениям",
+  "level": 6,
+  "price": 1274400,
+  "improve": [
+    {
+      "name": "gamesPerDay",
+      "value": -4,
+      "_id": {
+        "$oid": "66719b43509a5d7680965207"
       }
-    ],
-    "requirement": [
-      "cargo 8"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 15",
+    "cargo 15"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719b89509a5d768096520a"
   },
-  {
-    "_id": {
-      "$oid": "66719767fa72a4943ef3573a"
-    },
-    "slug": "cargo 10",
-    "name": "Грузоподъемность 10",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 10,
-    "price": 50000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719779fa72a4943ef3573f"
-        }
+  "slug": "rocket 7",
+  "name": "Ракета 7",
+  "description": "Открывает возможность добывать новый ресурс",
+  "level": 7,
+  "price": 1784160,
+  "improve": [
+    {
+      "name": "resource",
+      "value": 1,
+      "_id": {
+        "$oid": "66719b89509a5d768096520b"
       }
-    ],
-    "requirement": [
-      "rocket 4"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 18",
+    "cargo 18"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719bb6509a5d768096520e"
   },
-  {
-    "_id": {
-      "$oid": "66719799fa72a4943ef35748"
-    },
-    "slug": "cargo 11",
-    "name": "Грузоподъемность 11",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 11,
-    "price": 45000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "66719799fa72a4943ef35749"
-        }
+  "slug": "rocket 8",
+  "name": "Ракета 8",
+  "description": "Открывает доступ к новым улучшениям",
+  "level": 8,
+  "price": 2307312,
+  "improve": [
+    {
+      "name": "gamesPerDay",
+      "value": -2,
+      "_id": {
+        "$oid": "66719bb6509a5d768096520f"
       }
-    ],
-    "requirement": [
-      "cargo 10"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 21",
+    "cargo 21"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719bd5509a5d7680965212"
   },
-  {
-    "_id": {
-      "$oid": "667197a3fa72a4943ef3574c"
-    },
-    "slug": "cargo 12",
-    "name": "Грузоподъемность 12",
-    "description": "Увеличивает максимальное количество груза и топлива на 200",
-    "level": 12,
-    "price": 50000,
-    "improve": [
-      {
-        "name": "cargo",
-        "value": 200,
-        "_id": {
-          "$oid": "667197a3fa72a4943ef3574d"
-        }
+  "slug": "rocket 9",
+  "name": "Ракета 9",
+  "description": "Открывает возможность добывать новый ресурс",
+  "level": 9,
+  "price": 1977696,
+  "improve": [
+    {
+      "name": "resource",
+      "value": 1,
+      "_id": {
+        "$oid": "66719bd5509a5d7680965213"
       }
-    ],
-    "requirement": [
-      "cargo 11"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 24",
+    "cargo 24"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66719bfd509a5d7680965216"
   },
-  {
-    "_id": {
-      "$oid": "667198d5fa72a4943ef35755"
-    },
-    "slug": "luck 2",
-    "name": "Удача 2",
-    "description": "Увеличивает шанс выпадения более редких ресурсов",
-    "level": 2,
-    "price": 50000,
-    "improve": [
-      {
-        "name": "luck",
-        "value": 1,
-        "_id": {
-          "$oid": "667198d5fa72a4943ef35756"
-        }
+  "slug": "rocket 10",
+  "name": "Ракета 10",
+  "description": "Открывает доступ к новым улучшениям",
+  "level": 10,
+  "price": 2095632,
+  "improve": [
+    {
+      "name": "gamesPerDay",
+      "value": -2,
+      "_id": {
+        "$oid": "66719bfd509a5d7680965217"
       }
-    ],
-    "requirement": [
-      "rocket 3"
-    ],
-    "__v": 0
+    }
+  ],
+  "requirement": [
+    "mine 27",
+    "cargo 27"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667488b5f25db50824a037b7"
   },
-  {
-    "_id": {
-      "$oid": "667198fffa72a4943ef35759"
-    },
-    "slug": "luck 3",
-    "name": "Удача 3",
-    "description": "Увеличивает шанс выпадения более редких ресурсов",
-    "level": 3,
-    "price": 200000,
-    "improve": [
-      {
-        "name": "luck",
-        "value": 1,
-        "_id": {
-          "$oid": "667198fffa72a4943ef3575a"
-        }
-      }
-    ],
-    "requirement": [
-      "rocket 5"
-    ],
-    "__v": 0
+  "slug": "mine 13",
+  "name": "Добыча 13",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 13,
+  "price": 116500,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 5"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667488e8f25db50824a037ba"
   },
-  {
-    "_id": {
-      "$oid": "66719914fa72a4943ef3575d"
-    },
-    "slug": "luck 4",
-    "name": "Удача 4",
-    "description": "Увеличивает шанс выпадения более редких ресурсов",
-    "level": 4,
-    "price": 1000000,
-    "improve": [
-      {
-        "name": "luck",
-        "value": 1,
-        "_id": {
-          "$oid": "66719914fa72a4943ef3575e"
-        }
-      }
-    ],
-    "requirement": [
-      "rocket 7"
-    ],
-    "__v": 0
+  "slug": "mine 14",
+  "name": "Добыча 14",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 14,
+  "price": 151450,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 13"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667488edf25db50824a037bd"
   },
-  {
-    "_id": {
-      "$oid": "6671992efa72a4943ef35761"
-    },
-    "slug": "luck 5",
-    "name": "Удача 5",
-    "description": "Увеличивает шанс выпадения более редких ресурсов",
-    "level": 5,
-    "price": 5000000,
-    "improve": [
-      {
-        "name": "luck",
-        "value": 1,
-        "_id": {
-          "$oid": "6671992efa72a4943ef35762"
-        }
-      }
-    ],
-    "requirement": [
-      "rocket 9"
-    ],
-    "__v": 0
+  "slug": "mine 15",
+  "name": "Добыча 15",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 15,
+  "price": 196900,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 14"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667488f2f25db50824a037c0"
   },
-  {
-    "_id": {
-      "$oid": "66719a7a509a5d76809651fb"
-    },
-    "slug": "rocket 3",
-    "name": "Ракета 3",
-    "description": "Открывает новый возможность добывать новый ресурс",
-    "level": 3,
-    "price": 1123200,
-    "improve": [
-      {
-        "name": "resource",
-        "value": 1,
-        "_id": {
-          "$oid": "66719a7a509a5d76809651fc"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 6",
-      "cargo 6"
-    ],
-    "__v": 0
+  "slug": "mine 16",
+  "name": "Добыча 16",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 16,
+  "price": 255950,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 6"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667488f8f25db50824a037c3"
   },
-  {
-    "_id": {
-      "$oid": "66719aae509a5d76809651ff"
-    },
-    "slug": "rocket 4",
-    "name": "Ракета 4",
-    "description": "Открывает доступ к новым улучшениям",
-    "level": 4,
-    "price": 362880,
-    "improve": [],
-    "requirement": [
-      "mine 9",
-      "cargo 9"
-    ],
-    "__v": 0
+  "slug": "mine 17",
+  "name": "Добыча 17",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 17,
+  "price": 332750,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 16"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748900f25db50824a037c6"
   },
-  {
-    "_id": {
-      "$oid": "66719ad2509a5d7680965202"
-    },
-    "slug": "rocket 5",
-    "name": "Ракета 5",
-    "description": "Открывает новый возможность добывать новый ресурс",
-    "level": 5,
-    "price": 725760,
-    "improve": [
-      {
-        "name": "resource",
-        "value": 1,
-        "_id": {
-          "$oid": "66719ad2509a5d7680965203"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 12",
-      "cargo 12"
-    ],
-    "__v": 0
+  "slug": "mine 18",
+  "name": "Добыча 18",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 18,
+  "price": 432550,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 17"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674890bf25db50824a037c9"
   },
-  {
-    "_id": {
-      "$oid": "66719b43509a5d7680965206"
-    },
-    "slug": "rocket 6",
-    "name": "Ракета 6",
-    "description": "Открывает доступ к новым улучшениям",
-    "level": 6,
-    "price": 1274400,
-    "improve": [
-      {
-        "name": "gamesPerDay",
-        "value": -4,
-        "_id": {
-          "$oid": "66719b43509a5d7680965207"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 15",
-      "cargo 15"
-    ],
-    "__v": 0
+  "slug": "mine 19",
+  "name": "Добыча 19",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 19,
+  "price": 562300,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 7"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748913f25db50824a037cc"
   },
-  {
-    "_id": {
-      "$oid": "66719b89509a5d768096520a"
-    },
-    "slug": "rocket 7",
-    "name": "Ракета 7",
-    "description": "Открывает возможность добывать новый ресурс",
-    "level": 7,
-    "price": 1784160,
-    "improve": [
-      {
-        "name": "resource",
-        "value": 1,
-        "_id": {
-          "$oid": "66719b89509a5d768096520b"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 18",
-      "cargo 18"
-    ],
-    "__v": 0
+  "slug": "mine 20",
+  "name": "Добыча 20",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 20,
+  "price": 731000,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 19"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748917f25db50824a037cf"
   },
-  {
-    "_id": {
-      "$oid": "66719bb6509a5d768096520e"
-    },
-    "slug": "rocket 8",
-    "name": "Ракета 8",
-    "description": "Открывает доступ к новым улучшениям",
-    "level": 8,
-    "price": 2307312,
-    "improve": [
-      {
-        "name": "gamesPerDay",
-        "value": -2,
-        "_id": {
-          "$oid": "66719bb6509a5d768096520f"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 21",
-      "cargo 21"
-    ],
-    "__v": 0
+  "slug": "mine 21",
+  "name": "Добыча 21",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 21,
+  "price": 950250,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 20"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674891df25db50824a037d2"
   },
-  {
-    "_id": {
-      "$oid": "66719bd5509a5d7680965212"
-    },
-    "slug": "rocket 9",
-    "name": "Ракета 9",
-    "description": "Открывает возможность добывать новый ресурс",
-    "level": 9,
-    "price": 1977696,
-    "improve": [
-      {
-        "name": "resource",
-        "value": 1,
-        "_id": {
-          "$oid": "66719bd5509a5d7680965213"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 24",
-      "cargo 24"
-    ],
-    "__v": 0
+  "slug": "mine 22",
+  "name": "Добыча 22",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 22,
+  "price": 1235350,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 8"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748920f25db50824a037d5"
   },
-  {
-    "_id": {
-      "$oid": "66719bfd509a5d7680965216"
-    },
-    "slug": "rocket 10",
-    "name": "Ракета 10",
-    "description": "Открывает доступ к новым улучшениям",
-    "level": 10,
-    "price": 2095632,
-    "improve": [
-      {
-        "name": "gamesPerDay",
-        "value": -2,
-        "_id": {
-          "$oid": "66719bfd509a5d7680965217"
-        }
-      }
-    ],
-    "requirement": [
-      "mine 30",
-      "cargo 30"
-    ],
-    "__v": 0
-  }
-]
+  "slug": "mine 23",
+  "name": "Добыча 23",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 23,
+  "price": 1605950,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 22"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748932f25db50824a037da"
+  },
+  "slug": "mine 24",
+  "name": "Добыча 24",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 24,
+  "price": 2087700,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 23"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748935f25db50824a037dd"
+  },
+  "slug": "mine 25",
+  "name": "Добыча 25",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 25,
+  "price": 2714050,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 9"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674893bf25db50824a037e0"
+  },
+  "slug": "mine 26",
+  "name": "Добыча 26",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 26,
+  "price": 3528250,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 25"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748940f25db50824a037e3"
+  },
+  "slug": "mine 27",
+  "name": "Добыча 27",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 27,
+  "price": 4586700,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 26"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748946f25db50824a037e6"
+  },
+  "slug": "mine 28",
+  "name": "Добыча 28",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 28,
+  "price": 5962700,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "rocket 10"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674894ef25db50824a037e9"
+  },
+  "slug": "mine 29",
+  "name": "Добыча 29",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 29,
+  "price": 7751500,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 28"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66748957f25db50824a037ec"
+  },
+  "slug": "mine 30",
+  "name": "Добыча 30",
+  "description": "Увеличивает количество ресурсов за свайп по кораблю на 1",
+  "level": 30,
+  "price": 10076950,
+  "improve": [
+    {
+      "name": "mine",
+      "value": 1
+    }
+  ],
+  "requirement": [
+    "mine 29"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674901b55a7ecdb639bb6a2"
+  },
+  "slug": "cargo 13",
+  "name": "Грузоподъёмность 13",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 13,
+  "price": 65000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 5"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674902355a7ecdb639bb6a5"
+  },
+  "slug": "cargo 14",
+  "name": "Грузоподъёмность 14",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 14,
+  "price": 70000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 13"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674902755a7ecdb639bb6a8"
+  },
+  "slug": "cargo 15",
+  "name": "Грузоподъёмность 15",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 15,
+  "price": 75000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 14"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674902c55a7ecdb639bb6ab"
+  },
+  "slug": "cargo 16",
+  "name": "Грузоподъёмность 16",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 16,
+  "price": 80000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 6"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674903155a7ecdb639bb6ae"
+  },
+  "slug": "cargo 17",
+  "name": "Грузоподъёмность 17",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 17,
+  "price": 85000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 16"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674903855a7ecdb639bb6b1"
+  },
+  "slug": "cargo 18",
+  "name": "Грузоподъёмность 18",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 18,
+  "price": 90000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 17"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674903e55a7ecdb639bb6b4"
+  },
+  "slug": "cargo 19",
+  "name": "Грузоподъёмность 19",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 19,
+  "price": 95000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 7"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674904555a7ecdb639bb6b7"
+  },
+  "slug": "cargo 20",
+  "name": "Грузоподъёмность 20",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 20,
+  "price": 100000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 19"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674905155a7ecdb639bb6ba"
+  },
+  "slug": "cargo 21",
+  "name": "Грузоподъёмность 21",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 21,
+  "price": 105000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 20"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674905555a7ecdb639bb6bd"
+  },
+  "slug": "cargo 22",
+  "name": "Грузоподъёмность 22",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 22,
+  "price": 110000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 8"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674905955a7ecdb639bb6c0"
+  },
+  "slug": "cargo 23",
+  "name": "Грузоподъёмность 23",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 23,
+  "price": 115000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 22"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674905d55a7ecdb639bb6c3"
+  },
+  "slug": "cargo 24",
+  "name": "Грузоподъёмность 24",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 24,
+  "price": 120000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 23"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674906255a7ecdb639bb6c6"
+  },
+  "slug": "cargo 25",
+  "name": "Грузоподъёмность 25",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 25,
+  "price": 125000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 9"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674906655a7ecdb639bb6c9"
+  },
+  "slug": "cargo 26",
+  "name": "Грузоподъёмность 26",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 26,
+  "price": 130000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 25"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674906b55a7ecdb639bb6cc"
+  },
+  "slug": "cargo 27",
+  "name": "Грузоподъёмность 27",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 27,
+  "price": 135000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 26"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674907055a7ecdb639bb6cf"
+  },
+  "slug": "cargo 28",
+  "name": "Грузоподъёмность 28",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 28,
+  "price": 140000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "rocket 10"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674907955a7ecdb639bb6d2"
+  },
+  "slug": "cargo 29",
+  "name": "Грузоподъёмность 29",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 29,
+  "price": 145000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 28"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6674907f55a7ecdb639bb6d5"
+  },
+  "slug": "cargo 30",
+  "name": "Грузоподъёмность 30",
+  "description": "Увеличивает максимальное количество груза и топлива на 200",
+  "level": 30,
+  "price": 150000,
+  "improve": [
+    {
+      "name": "cargo",
+      "value": 200
+    }
+  ],
+  "requirement": [
+    "cargo 29"
+  ],
+  "__v": 0
+}]
