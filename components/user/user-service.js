@@ -99,7 +99,8 @@ class UserService {
         return newUser
 
     }
-    async fuelBoost(user) {
+    async fuelBoost(_id) {
+        const user = await UserModel.findOne({ _id })
         const now = Date.now();
         const lastFuelBoostTime = new Date(user.lastFuelBoost)
         const lastFuelBoost = lastFuelBoostTime.getTime();
@@ -114,7 +115,9 @@ class UserService {
         return newUser
     }
 
-    async rage(user) {
+    async rage({ _id }) {
+        const user = await UserModel.findOne({ _id })
+
         const now = Date.now();
         const lastRageTime = new Date(user.lastRage)
         const lastRage = lastRageTime.getTime();
