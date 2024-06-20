@@ -20,17 +20,17 @@ const UserSchema = new Schema({
     cargo: [Number],
     upgrades: {
         type: [String],
-        default: ['cargo 1', 'cargo 2', 'cargo 3', 'cargo 4', 'cargo 5', 'mine 1', 'mine 2', 'mine 3', 'mine 4', 'mine 5', 'rocket 2']
+        default: ['cargo 1', 'cargo 2', 'cargo 3', 'mine 1', 'mine 2', 'mine 3']
     },
     completedQuests: [String],
     // cargoCapacity: { type: Number, default: 200 },
-    cargoCapacity: { type: Number, default: 1200 },
+    cargoCapacity: { type: Number, default: 800 },
     cargoWeight: { type: Number, default: 0 },
     gamesPerDay: { type: Number, default: 12 },
     // fuel: { type: Number, default: 600 },
-    fuel: { type: Number, default: 3600 },
+    fuel: { type: Number, default: 2400 },
     // maxFuel: { type: Number, default: 600 },
-    maxFuel: { type: Number, default: 3600 },
+    maxFuel: { type: Number, default: 2400 },
     // minePower: { type: Number, default: 1 },
     minePower: { type: Number, default: 6 },
     luck: { type: Number, default: 0 },
