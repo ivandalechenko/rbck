@@ -1,855 +1,864 @@
-[{
-  "_id": {
-    "$oid": "666f7c3dc13214215424c555"
+[
+  {
+    "_id": {
+      "$oid": "666f7c3dc13214215424c555"
+    },
+    "level": 1,
+    "canMineLevel": [
+      {
+        "canMineLevel": 1,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 60,
+            "_id": {
+              "$oid": "666f7ca5fd3469e13283e16f"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 70,
+            "_id": {
+              "$oid": "666f8010795a9438a03fd658"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7ca5fd3469e13283e16e"
+        }
+      },
+      {
+        "canMineLevel": 2,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 65,
+            "_id": {
+              "$oid": "666f7d15fd3469e13283e1b7"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 60,
+            "_id": {
+              "$oid": "666f7d1bfd3469e13283e1c0"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 70,
+            "_id": {
+              "$oid": "666f8005795a9438a03fd639"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7d15fd3469e13283e1b6"
+        }
+      },
+      {
+        "canMineLevel": 3,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 60,
+            "_id": {
+              "$oid": "666f7d4dfd3469e13283e205"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 55,
+            "_id": {
+              "$oid": "666f7d51fd3469e13283e211"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 53,
+            "_id": {
+              "$oid": "666f7d54fd3469e13283e21c"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 65,
+            "_id": {
+              "$oid": "666f7ff9795a9438a03fd5e7"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7d4dfd3469e13283e204"
+        }
+      },
+      {
+        "canMineLevel": 4,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 59,
+            "_id": {
+              "$oid": "666f7da1fd3469e13283e2b7"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 57,
+            "_id": {
+              "$oid": "666f7da8fd3469e13283e2c7"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 50,
+            "_id": {
+              "$oid": "666f7dabfd3469e13283e2d8"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 47,
+            "_id": {
+              "$oid": "666f7daffd3469e13283e2ea"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 60,
+            "_id": {
+              "$oid": "666f7fd9795a9438a03fd530"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7da1fd3469e13283e2b6"
+        }
+      },
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 55,
+            "_id": {
+              "$oid": "666f7e75fd3469e13283e41b"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 52,
+            "_id": {
+              "$oid": "666f7e78fd3469e13283e430"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 44,
+            "_id": {
+              "$oid": "666f7e7cfd3469e13283e444"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 40,
+            "_id": {
+              "$oid": "666f7e82fd3469e13283e45d"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 39,
+            "_id": {
+              "$oid": "666f7e87fd3469e13283e475"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 59,
+            "_id": {
+              "$oid": "666f7fd1795a9438a03fd514"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7e75fd3469e13283e41a"
+        }
+      }
+    ],
+    "__v": 20,
+    "name": "Астероид",
+    "price": 1,
+    "weight": 1
   },
-  "level": 1,
-  "canMineLevel": [
-    {
-      "canMineLevel": 1,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 60,
-          "_id": {
-            "$oid": "666f7ca5fd3469e13283e16f"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 70,
-          "_id": {
-            "$oid": "666f8010795a9438a03fd658"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7ca5fd3469e13283e16e"
-      }
+  {
+    "_id": {
+      "$oid": "666f7ce8fd3469e13283e196"
     },
-    {
-      "canMineLevel": 2,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 65,
-          "_id": {
-            "$oid": "666f7d15fd3469e13283e1b7"
+    "level": 2,
+    "canMineLevel": [
+      {
+        "canMineLevel": 1,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 40,
+            "_id": {
+              "$oid": "666f7cedfd3469e13283e19d"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 30,
+            "_id": {
+              "$oid": "666f8016795a9438a03fd675"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 60,
-          "_id": {
-            "$oid": "666f7d1bfd3469e13283e1c0"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 70,
-          "_id": {
-            "$oid": "666f8005795a9438a03fd639"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7cedfd3469e13283e19c"
         }
-      ],
-      "_id": {
-        "$oid": "666f7d15fd3469e13283e1b6"
-      }
-    },
-    {
-      "canMineLevel": 3,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 60,
-          "_id": {
-            "$oid": "666f7d4dfd3469e13283e205"
+      },
+      {
+        "canMineLevel": 2,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d28fd3469e13283e1d0"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d29fd3469e13283e1d7"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f8002795a9438a03fd61d"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 55,
-          "_id": {
-            "$oid": "666f7d51fd3469e13283e211"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 53,
-          "_id": {
-            "$oid": "666f7d54fd3469e13283e21c"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 65,
-          "_id": {
-            "$oid": "666f7ff9795a9438a03fd5e7"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7d28fd3469e13283e1cf"
         }
-      ],
-      "_id": {
-        "$oid": "666f7d4dfd3469e13283e204"
-      }
-    },
-    {
-      "canMineLevel": 4,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 59,
-          "_id": {
-            "$oid": "666f7da1fd3469e13283e2b7"
+      },
+      {
+        "canMineLevel": 3,
+        "luckLevel": [
+          {
+            "luckLevel": 3,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d5bfd3469e13283e234"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d5cfd3469e13283e23e"
+            }
+          },
+          {
+            "luckLevel": 1,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d5dfd3469e13283e249"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7ff4795a9438a03fd5cc"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 57,
-          "_id": {
-            "$oid": "666f7da8fd3469e13283e2c7"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 50,
-          "_id": {
-            "$oid": "666f7dabfd3469e13283e2d8"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 47,
-          "_id": {
-            "$oid": "666f7daffd3469e13283e2ea"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 60,
-          "_id": {
-            "$oid": "666f7fd9795a9438a03fd530"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7d5bfd3469e13283e233"
         }
-      ],
-      "_id": {
-        "$oid": "666f7da1fd3469e13283e2b6"
-      }
-    },
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 55,
-          "_id": {
-            "$oid": "666f7e75fd3469e13283e41b"
+      },
+      {
+        "canMineLevel": 4,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7dc8fd3469e13283e30a"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7dc9fd3469e13283e31a"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7dcafd3469e13283e329"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7dccfd3469e13283e339"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7fdd795a9438a03fd54a"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 52,
-          "_id": {
-            "$oid": "666f7e78fd3469e13283e430"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 44,
-          "_id": {
-            "$oid": "666f7e7cfd3469e13283e444"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 40,
-          "_id": {
-            "$oid": "666f7e82fd3469e13283e45d"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 39,
-          "_id": {
-            "$oid": "666f7e87fd3469e13283e475"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 59,
-          "_id": {
-            "$oid": "666f7fd1795a9438a03fd514"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7dc8fd3469e13283e309"
         }
-      ],
-      "_id": {
-        "$oid": "666f7e75fd3469e13283e41a"
+      },
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7e91fd3469e13283e49b"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7e92fd3469e13283e4ae"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7e93fd3469e13283e4c2"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7e94fd3469e13283e4d7"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7e96fd3469e13283e4ef"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7fce795a9438a03fd4fd"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "666f7e91fd3469e13283e49a"
+        }
       }
-    }
-  ],
-  "__v": 20,
-  "name": "Астероид",
-  "price": 1,
-  "weight": 1
-},
-{
-  "_id": {
-    "$oid": "666f7ce8fd3469e13283e196"
+    ],
+    "__v": 20,
+    "name": "Железо",
+    "price": 2,
+    "weight": 1
   },
-  "level": 2,
-  "canMineLevel": [
-    {
-      "canMineLevel": 1,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 40,
-          "_id": {
-            "$oid": "666f7cedfd3469e13283e19d"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 30,
-          "_id": {
-            "$oid": "666f8016795a9438a03fd675"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7cedfd3469e13283e19c"
-      }
+  {
+    "_id": {
+      "$oid": "666f7d2dfd3469e13283e1dc"
     },
-    {
-      "canMineLevel": 2,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d28fd3469e13283e1d0"
+    "level": 3,
+    "canMineLevel": [
+      {
+        "canMineLevel": 2,
+        "luckLevel": [
+          {
+            "luckLevel": 2,
+            "percent": 20,
+            "_id": {
+              "$oid": "666f7d2dfd3469e13283e1df"
+            }
+          },
+          {
+            "luckLevel": 1,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7d30fd3469e13283e1e4"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f8000795a9438a03fd603"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d29fd3469e13283e1d7"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f8002795a9438a03fd61d"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7d2dfd3469e13283e1de"
         }
-      ],
-      "_id": {
-        "$oid": "666f7d28fd3469e13283e1cf"
-      }
-    },
-    {
-      "canMineLevel": 3,
-      "luckLevel": [
-        {
-          "luckLevel": 3,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d5bfd3469e13283e234"
+      },
+      {
+        "canMineLevel": 3,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7d66fd3469e13283e264"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7d6bfd3469e13283e26e"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7d6cfd3469e13283e277"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ff3795a9438a03fd5b3"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d5cfd3469e13283e23e"
-          }
-        },
-        {
-          "luckLevel": 1,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d5dfd3469e13283e249"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7ff4795a9438a03fd5cc"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7d66fd3469e13283e263"
         }
-      ],
-      "_id": {
-        "$oid": "666f7d5bfd3469e13283e233"
-      }
-    },
-    {
-      "canMineLevel": 4,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7dc8fd3469e13283e30a"
+      },
+      {
+        "canMineLevel": 4,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ddcfd3469e13283e355"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7de0fd3469e13283e361"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 13,
+            "_id": {
+              "$oid": "666f7de4fd3469e13283e370"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7de7fd3469e13283e380"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7fdf795a9438a03fd560"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7dc9fd3469e13283e31a"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7dcafd3469e13283e329"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7dccfd3469e13283e339"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7fdd795a9438a03fd54a"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7ddcfd3469e13283e354"
         }
-      ],
-      "_id": {
-        "$oid": "666f7dc8fd3469e13283e309"
-      }
-    },
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7e91fd3469e13283e49b"
+      },
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7e9ffd3469e13283e50f"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ea0fd3469e13283e522"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 13,
+            "_id": {
+              "$oid": "666f7ea5fd3469e13283e534"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7eaafd3469e13283e54b"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 15,
+            "_id": {
+              "$oid": "666f7eabfd3469e13283e55f"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7fc6795a9438a03fd4e2"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7e92fd3469e13283e4ae"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7e93fd3469e13283e4c2"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7e94fd3469e13283e4d7"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7e96fd3469e13283e4ef"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7fce795a9438a03fd4fd"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7e9ffd3469e13283e50e"
         }
-      ],
-      "_id": {
-        "$oid": "666f7e91fd3469e13283e49a"
       }
-    }
-  ],
-  "__v": 20,
-  "name": "Железо",
-  "price": 2,
-  "weight": 1
-},
-{
-  "_id": {
-    "$oid": "666f7d2dfd3469e13283e1dc"
+    ],
+    "__v": 18,
+    "name": "Алмаз",
+    "price": 3,
+    "weight": 1
   },
-  "level": 3,
-  "canMineLevel": [
-    {
-      "canMineLevel": 2,
-      "luckLevel": [
-        {
-          "luckLevel": 2,
-          "percent": 20,
-          "_id": {
-            "$oid": "666f7d2dfd3469e13283e1df"
-          }
-        },
-        {
-          "luckLevel": 1,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7d30fd3469e13283e1e4"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f8000795a9438a03fd603"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7d2dfd3469e13283e1de"
-      }
+  {
+    "_id": {
+      "$oid": "666f7d73fd3469e13283e27e"
     },
-    {
-      "canMineLevel": 3,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7d66fd3469e13283e264"
+    "level": 4,
+    "canMineLevel": [
+      {
+        "canMineLevel": 3,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7d78fd3469e13283e285"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7d79fd3469e13283e28a"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7d79fd3469e13283e28a"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 5,
+            "_id": {
+              "$oid": "666f7ff0795a9438a03fd59a"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7d6bfd3469e13283e26e"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7d6cfd3469e13283e277"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ff3795a9438a03fd5b3"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7d78fd3469e13283e284"
         }
-      ],
-      "_id": {
-        "$oid": "666f7d66fd3469e13283e263"
-      }
-    },
-    {
-      "canMineLevel": 4,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ddcfd3469e13283e355"
+      },
+      {
+        "canMineLevel": 4,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7df7fd3469e13283e392"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7df8fd3469e13283e39a"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7dfefd3469e13283e3a5"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7dfffd3469e13283e3b1"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 8,
+            "_id": {
+              "$oid": "666f7fe6795a9438a03fd576"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7de0fd3469e13283e361"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 13,
-          "_id": {
-            "$oid": "666f7de4fd3469e13283e370"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7de7fd3469e13283e380"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7fdf795a9438a03fd560"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7df7fd3469e13283e391"
         }
-      ],
-      "_id": {
-        "$oid": "666f7ddcfd3469e13283e354"
-      }
-    },
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7e9ffd3469e13283e50f"
+      },
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ebbfd3469e13283e57b"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ebffd3469e13283e58a"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7ecafd3469e13283e59c"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7ed0fd3469e13283e5ad"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 12,
+            "_id": {
+              "$oid": "666f7ed1fd3469e13283e5bd"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 8,
+            "_id": {
+              "$oid": "666f7fc3795a9438a03fd4cd"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ea0fd3469e13283e522"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 13,
-          "_id": {
-            "$oid": "666f7ea5fd3469e13283e534"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7eaafd3469e13283e54b"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7eabfd3469e13283e55f"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7fc6795a9438a03fd4e2"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7ebbfd3469e13283e57a"
         }
-      ],
-      "_id": {
-        "$oid": "666f7e9ffd3469e13283e50e"
       }
-    }
-  ],
-  "__v": 18,
-  "name": "Алмаз",
-  "price": 3,
-  "weight": 1
-},
-{
-  "_id": {
-    "$oid": "666f7d73fd3469e13283e27e"
+    ],
+    "__v": 14,
+    "name": "Осколок кометы",
+    "price": 5,
+    "weight": 2
   },
-  "level": 4,
-  "canMineLevel": [
-    {
-      "canMineLevel": 3,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7d78fd3469e13283e285"
-          }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 15,
-          "_id": {
-            "$oid": "666f7d79fd3469e13283e28a"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 5,
-          "_id": {
-            "$oid": "666f7ff0795a9438a03fd59a"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7d78fd3469e13283e284"
-      }
+  {
+    "_id": {
+      "$oid": "666f7e08fd3469e13283e3b6"
     },
-    {
-      "canMineLevel": 4,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7df7fd3469e13283e392"
+    "level": 5,
+    "canMineLevel": [
+      {
+        "canMineLevel": 4,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 6,
+            "_id": {
+              "$oid": "666f7e0cfd3469e13283e3bd"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 8,
+            "_id": {
+              "$oid": "666f7e13fd3469e13283e3c4"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7e20fd3469e13283e3d0"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 11,
+            "_id": {
+              "$oid": "666f7e23fd3469e13283e3d9"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 5,
+            "_id": {
+              "$oid": "666f7fe9795a9438a03fd585"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7df8fd3469e13283e39a"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7dfefd3469e13283e3a5"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7dfffd3469e13283e3b1"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 8,
-          "_id": {
-            "$oid": "666f7fe6795a9438a03fd576"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7e0cfd3469e13283e3bc"
         }
-      ],
-      "_id": {
-        "$oid": "666f7df7fd3469e13283e391"
-      }
-    },
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ebbfd3469e13283e57b"
+      },
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 6,
+            "_id": {
+              "$oid": "666f7eecfd3469e13283e5d9"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 8,
+            "_id": {
+              "$oid": "666f7ef3fd3469e13283e5e5"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 10,
+            "_id": {
+              "$oid": "666f7ef9fd3469e13283e5f2"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 11,
+            "_id": {
+              "$oid": "666f7f01fd3469e13283e602"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 11,
+            "_id": {
+              "$oid": "666f7f03fd3469e13283e60f"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 5,
+            "_id": {
+              "$oid": "666f7fb8795a9438a03fd4b6"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ebffd3469e13283e58a"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7ecafd3469e13283e59c"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7ed0fd3469e13283e5ad"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 12,
-          "_id": {
-            "$oid": "666f7ed1fd3469e13283e5bd"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 8,
-          "_id": {
-            "$oid": "666f7fc3795a9438a03fd4cd"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7eecfd3469e13283e5d8"
         }
-      ],
-      "_id": {
-        "$oid": "666f7ebbfd3469e13283e57a"
       }
-    }
-  ],
-  "__v": 14,
-  "name": "Осколок кометы",
-  "price": 5,
-  "weight": 2
-},
-{
-  "_id": {
-    "$oid": "666f7e08fd3469e13283e3b6"
+    ],
+    "__v": 11,
+    "name": "Комета",
+    "price": 7,
+    "weight": 2
   },
-  "level": 5,
-  "canMineLevel": [
-    {
-      "canMineLevel": 4,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 6,
-          "_id": {
-            "$oid": "666f7e0cfd3469e13283e3bd"
-          }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 8,
-          "_id": {
-            "$oid": "666f7e13fd3469e13283e3c4"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7e20fd3469e13283e3d0"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 11,
-          "_id": {
-            "$oid": "666f7e23fd3469e13283e3d9"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 5,
-          "_id": {
-            "$oid": "666f7fe9795a9438a03fd585"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7e0cfd3469e13283e3bc"
-      }
+  {
+    "_id": {
+      "$oid": "666f7f0dfd3469e13283e616"
     },
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 6,
-          "_id": {
-            "$oid": "666f7eecfd3469e13283e5d9"
+    "level": 6,
+    "canMineLevel": [
+      {
+        "canMineLevel": 5,
+        "luckLevel": [
+          {
+            "luckLevel": 1,
+            "percent": 4,
+            "_id": {
+              "$oid": "666f7f11fd3469e13283e61d"
+            }
+          },
+          {
+            "luckLevel": 2,
+            "percent": 5,
+            "_id": {
+              "$oid": "666f7f17fd3469e13283e624"
+            }
+          },
+          {
+            "luckLevel": 3,
+            "percent": 6,
+            "_id": {
+              "$oid": "666f7f1afd3469e13283e62c"
+            }
+          },
+          {
+            "luckLevel": 4,
+            "percent": 7,
+            "_id": {
+              "$oid": "666f7f1ffd3469e13283e635"
+            }
+          },
+          {
+            "luckLevel": 5,
+            "percent": 8,
+            "_id": {
+              "$oid": "666f7f23fd3469e13283e63f"
+            }
+          },
+          {
+            "luckLevel": 0,
+            "percent": 3,
+            "_id": {
+              "$oid": "666f7f90795a9438a03fd498"
+            }
           }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 8,
-          "_id": {
-            "$oid": "666f7ef3fd3469e13283e5e5"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 10,
-          "_id": {
-            "$oid": "666f7ef9fd3469e13283e5f2"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 11,
-          "_id": {
-            "$oid": "666f7f01fd3469e13283e602"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 11,
-          "_id": {
-            "$oid": "666f7f03fd3469e13283e60f"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 5,
-          "_id": {
-            "$oid": "666f7fb8795a9438a03fd4b6"
-          }
+        ],
+        "_id": {
+          "$oid": "666f7f11fd3469e13283e61c"
         }
-      ],
-      "_id": {
-        "$oid": "666f7eecfd3469e13283e5d8"
       }
-    }
-  ],
-  "__v": 11,
-  "name": "Комета",
-  "price": 7,
-  "weight": 2
-},
-{
-  "_id": {
-    "$oid": "666f7f0dfd3469e13283e616"
-  },
-  "level": 6,
-  "canMineLevel": [
-    {
-      "canMineLevel": 5,
-      "luckLevel": [
-        {
-          "luckLevel": 1,
-          "percent": 4,
-          "_id": {
-            "$oid": "666f7f11fd3469e13283e61d"
-          }
-        },
-        {
-          "luckLevel": 2,
-          "percent": 5,
-          "_id": {
-            "$oid": "666f7f17fd3469e13283e624"
-          }
-        },
-        {
-          "luckLevel": 3,
-          "percent": 6,
-          "_id": {
-            "$oid": "666f7f1afd3469e13283e62c"
-          }
-        },
-        {
-          "luckLevel": 4,
-          "percent": 7,
-          "_id": {
-            "$oid": "666f7f1ffd3469e13283e635"
-          }
-        },
-        {
-          "luckLevel": 5,
-          "percent": 8,
-          "_id": {
-            "$oid": "666f7f23fd3469e13283e63f"
-          }
-        },
-        {
-          "luckLevel": 0,
-          "percent": 3,
-          "_id": {
-            "$oid": "666f7f90795a9438a03fd498"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "666f7f11fd3469e13283e61c"
-      }
-    }
-  ],
-  "__v": 6,
-  "name": "Звёздная пыль",
-  "price": 10,
-  "weight": 3
-}]
+    ],
+    "__v": 6,
+    "name": "Звёздная пыль",
+    "price": 10,
+    "weight": 3
+  }
+]
